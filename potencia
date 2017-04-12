@@ -1,0 +1,30 @@
+# Recusivos
+Exercicios Recursivos em Js
+// Potencia utilizando Recursividade
+<!-- Pedro Leonardo Goulart Silva -->
+<html>
+	<head>
+		<script>
+			
+			function funcao(){
+			    var n;
+				var resposta;
+				var p;
+				n = 4; // Base 
+				p = 2; // Potencia 
+				alert(pot(n,p));
+			}
+			function pot(n,p){
+				if (p==0){
+					return 1;
+				}else if(p==1){
+					return n;
+				}else{
+					return (n*pot(n,p-1));
+				}
+			}
+		</script>
+	</head>
+	<body onload="funcao()">
+	</body>
+</html>
